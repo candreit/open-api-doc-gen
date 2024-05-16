@@ -1,5 +1,5 @@
 import { PropertySchema } from "./api-doc-property";
-import { Metadata } from "./metadata";
+import { Metadata } from "../types/metadata";
 
 export type SchemaComponent = {
     type?: 'object',

@@ -1,5 +1,5 @@
 import { generateRequestSchema } from "./generate-request-schema";
-import { HttpStatusCodes } from "./http-status-code";
+import { HttpStatusCodes } from "../types/http-status-codes";
 
 export function ApiDocResponseType(type: object, code: HttpStatusCodes): MethodDecorator {
 

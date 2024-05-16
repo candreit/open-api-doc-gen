@@ -1,4 +1,4 @@
-import { Metadata } from "./metadata";
+import { Metadata } from "../types/metadata";
 
 export function ApiPathOut(type: object): PropertyDecorator {
     return function(target: {[key: string]: any}, propertyKey: string | symbol) {

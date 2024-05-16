@@ -1,5 +1,5 @@
-import { HttpStatusCodes } from "./http-status-code";
-import { Metadata } from "./metadata";
+import { HttpStatusCodes } from "../types/http-status-codes";
+import { Metadata } from "../types/metadata";
 
 type RequestOrResponse = 'requestBody' | 'responses';
 

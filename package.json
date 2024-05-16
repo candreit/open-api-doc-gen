@@ -1,5 +1,5 @@
 {
-  "name": "open-api-doc-gen",
+  "name": "@fanduel/open-api-doc-gen",
   "version": "0.0.1",
   "description": "Generate OpenAPI documentation with Decorators",
   "author": {
@@ -8,9 +8,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "tsc": "tsc",
-    "generate": "node ./src/generate.js"
+    "compile": "tsc"
   },
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
   "dependencies": {
     "@types/node": "^20.12.12",
     "newman": "^6.1.2",

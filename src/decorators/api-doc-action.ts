@@ -1,5 +1,5 @@
 import { Methods } from "../types/methods";
-import { Metadata } from "./metadata";
+import { Metadata } from "../types/metadata";
 
 export function ApiDocAction(method: Methods, endpoint: string): MethodDecorator {
 

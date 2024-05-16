@@ -1,4 +1,4 @@
-import { Metadata } from "./metadata";
+import { Metadata } from "../types/metadata";
 
 export function ApiEnum(data: object): PropertyDecorator {
     return function(target: object, propertyKey: string | symbol) {

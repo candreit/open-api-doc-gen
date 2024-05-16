@@ -1,4 +1,4 @@
-import { Metadata } from "./metadata"
+import { Metadata } from "../types/metadata"
 
 export function ApiSchemaOut(baseConfig: {[key: string]: any}): ClassDecorator {
 

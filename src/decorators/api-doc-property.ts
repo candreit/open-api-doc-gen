@@ -1,5 +1,5 @@
-import { Metadata } from "./metadata";
-import { PropertyTypes } from "./property-types";
+import { Metadata } from "../types/metadata";
+import { PropertyTypes } from "../types/property-types";
 
 export type PropertySchema = {
     type: PropertyTypes;
