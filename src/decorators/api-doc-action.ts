@@ -1,4 +1,3 @@
-import { MetaProperty, MethodDeclaration } from "typescript";
 import { Methods } from "../types/methods";
 import { Metadata } from "./metadata";
 
@@ -13,13 +12,10 @@ export function ApiDocAction(method: Methods, endpoint: string): MethodDecorator
             ...path?.[endpoint],
             [method]: {}
         }, target.constructor, propertyKey);
-
-        const pathsss = Reflect.getMetadata(Metadata.path, target.constructor, propertyKey);
-
     }
 }
 
 export function ApiGetAction(endpoint: string): MethodDecorator;
-export function ApiGetAction<T>(endpoint: string): MethodDecorator {
+export function ApiGetAction<T>(endpoint: string): MethodDecorator { 
     return ApiDocAction(Methods.GET, endpoint);
 }

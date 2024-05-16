@@ -52,6 +52,7 @@ export const generateRequestSchema = (target: object, propertyKey: string | symb
                 [lowerCaseMethod]: {
                     ...existingSchema[endpoint]?.[lowerCaseMethod],
                     [requestOrResponse]: {
+                        ...existingSchema[endpoint]?.[lowerCaseMethod]?.[requestOrResponse],
                         [statusCode]: {
                             description: 'Successful response',
                             ...body
